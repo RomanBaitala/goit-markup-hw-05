@@ -22,7 +22,7 @@
             <a class="header-company-logo1 link" href="">Web<span class="header-company-logo2 link">Studio</span></a>
             <nav class="navigation">
                 <ul class="navigate-list list">
-                    <li><a class="navigation-link link" href="index.html">Студія</a></li>
+                    <li><a class="navigation-link link navigation-studio" href="index.html">Студія</a></li>
                     <li><a class="navigation-link link" href="portfolio.html">Портфоліо</a></li>
                     <li><a class="navigation-link link" href="/contacts">Контакти</a></li>
                 </ul>
@@ -50,7 +50,7 @@
             <!--Head-->
             <div class="container">
                 <h1 class="main-title">Еффективні рішення <br /> для вашого бізнесу</h1>
-                <button class="main-button" type="button">Замовити послугу</button>
+                <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="specialisation section">
@@ -105,14 +105,23 @@
             <div class="container">
                 <h2 class="work-title">Чим ми займаємось</h2>
                 <ul class="work-list list">
-                    <li>
-                        <img class="work-image" src="images/work-image-1.jpg" width="370" height="294" alt="Пример работы ">
+                    <li class="work-item">
+                        <div class="work-container">
+                            <img class="work-image" src="images/work-image-1.jpg" width="370" height="294" alt="Пример работы ">
+                            <p class="work-text">Десктопні програми</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="work-image" src="images/work-image-2.jpg" width="370" height="294" alt="Пример работы">
+                    <li class="work-item">
+                        <div class="work-container">
+                            <img class="work-image" src="images/work-image-2.jpg" width="370" height="294" alt="Пример работы">
+                            <p class="work-text">Мобільні програми</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="work-image" src="images/work-image-3.jpg" width="370" height="294" alt="Пример работы">
+                    <li class="work-item">
+                        <div class="work-container">
+                            <img class="work-image" src="images/work-image-3.jpg" width="370" height="294" alt="Пример работы">
+                            <p class="work-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -397,6 +406,17 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button class="modal-button" type="button" data-modal-close>
+                <svg class="modal-close" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js">
+    </script>
 </body>
 
 </html> 
